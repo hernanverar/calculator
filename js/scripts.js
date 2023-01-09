@@ -33,27 +33,35 @@
 
 function saySomething(response1,response2) 
 {
- window.alert('The addition of your numbers equals ' + add(response1,response2) + '. The subtration of your numbers equals ' + subtract(response1,response2) + '. The division of your numbers equals ' + divide(response1,response2) + '. And the multiplication of your numbers equals ' + multiply(response1,response2)+ '.');
+  window.alert(add(response1,response2)+ subtract(response1,response2)+ multiply(response1,response2)+divide(response1,response2))
+//  window.alert('The addition of your numbers equals ' + add(response1,response2) + '. The subtration of your numbers equals ' + subtract(response1,response2) + '. The division of your numbers equals ' + divide(response1,response2) + '. And the multiplication of your numbers equals ' + multiply(response1,response2)+ '.');
 }
 function add(number1, number2) {
-
-  return number1 + number2;
+  
+  const result = number1 + number2;
+  return `${number1} + ${number2} = ${result},
+  `;
 
 }
 
 function subtract(number1, number2) {
 
-return number1 - number2;
+  const result = number1 - number2;
+  return `${number1} - ${number2} = ${result},
+  `;
 
 }
 function multiply(number1, number2) {
 
-return number1 * number2;
+  const result = number1 * number2;
+  return `${number1} * ${number2} = ${result},
+  `;
 
 }
 function divide(number1, number2) {
 
-return number1 / number2;
+  const result = number1 / number2;
+  return `${number1} / ${number2} = ${result}.`;
 
 }
 
